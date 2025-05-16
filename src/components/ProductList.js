@@ -10,7 +10,10 @@ const ProductList = () => {
   return (
     <div>
       {items.map((e) => {
-        return <Products {...e} key={e.id} />;
+        // return <Products {...e} key={e.id} />;
+        return <Products {...e} key={e.id}>
+          {e.description}
+        </Products>
       })}
     </div>
   );

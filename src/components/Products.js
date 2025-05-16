@@ -1,14 +1,25 @@
-import React from 'react';
+import React from "react";
 
-const Products = ({name, price}) => {
-   // const {name, price} = props;
-    return (
-        <div>
-            <h2>Image</h2>
-            <h3>{name}</h3>
-            <h4>{price}</h4>
-        </div>
-    );
+const Products = ({ name, price, image, children }) => {
+  return (
+    <div
+      style={{
+        border: "1px solid #ddd",
+        padding: "16px",
+        margin: "10px",
+        borderRadius: "8px",
+      }}
+    >
+      <img
+        src={image}
+        alt={name}
+        
+      />
+      <h3>{name}</h3>
+      <h4>{price} BDT</h4>
+      {children}
+    </div>
+  );
 };
 
 export default Products;
