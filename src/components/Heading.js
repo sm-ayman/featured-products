@@ -4,7 +4,7 @@ const Heading = () => {
   return (
     <div className="text-center mt-3">
       <h1>Featured Product</h1>
-      <p>Check & Get Your Desired Product!</p>
+      <p className="text-info">Check & Get Your Desired Product!</p>
     </div>
   );
 };
