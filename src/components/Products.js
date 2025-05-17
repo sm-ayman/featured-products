@@ -12,7 +12,7 @@ const Products = ({ name, price, image, children }) => {
         {/* <div className="card-subtitle">
           {children}
         </div> */}
-        <p className="card-text mt-auto fw-bold">Price: ${price} BDT</p>
+        <p className="card-text mt-auto fw-bold">Price: ${price}</p>
         <button className="btn btn-info" onClick={showDescription}>
           Show Description
         </button>
